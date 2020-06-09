@@ -17,7 +17,7 @@ body {
   background-color:coral;
   width:100vw;
   height:100vh;
-  position:absolute;
+  position:fixed;
   z-index:2;
   display:none;
   flex-direction:column;
@@ -61,7 +61,9 @@ body {
   align-self: flex-start;
   font-size:2rem;
   color:white;
-  margin-bottom:125px;
+  margin-bottom:200px;
+  position:fixed;
+  top:0;
 }
 
 header {
