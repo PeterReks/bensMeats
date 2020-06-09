@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Signika:wght@400;600;700&display=swap');
+
+
+:root {
+font-size:16px;
+margin:0;
+padding:0;
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+header {
+height:4rem;
+width:100vw;
+position: fixed;
+}
+
+header label {
+  font-size: 2rem;
+  display:none;
+  color:white;
+  padding:auto;
+  margin:auto;
+}
+
+#mobileNav {
+  height:100vh;
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  flex-direction:column;
+  background-color:#101010;
+  align-items:center;
+  justify-content: center;
+}
+
+
+.navBar {
+  position:static;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.navBar h1 {
+  margin:5px 20px 0px 20px;
+}
+
+.navBar a {
+  color:white;
+  text-shadow: 0px 2px 5px black;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+
+
+.logoText  {
+  color:white;
+  font-size:4rem;
+  margin-right:50px;
+  margin-left:50px;
+  margin-top:20px;
+  font-family: 'Caveat';
+  font-weight:bold;
+}
+
+.showcase {
+background-image:url("bensmeatsBG.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+}
+
+#productsButton {
+  width:35vw;
+  height:3rem;
+  background-color: #223DCC;
+  border-radius:10px;
+  text-align:center;
+  padding:0px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
+
+.showcase a {
+  font-size:1rem;
+  text-decoration: none;
+  color:white;
+  font-family: 'Signika';
+}
+
+.showcase h1 {
+  font-size:3.5rem;
+  font-family: 'Signika';
+  color:white;
+  text-shadow: -3px 2px 3px black;
+  margin:0px;
+  text-align:center;
+}
+
+.showcase h1:last-child {
+  width:45%;
+}
+
+@media (max-width:800px) {
+  #productsButton a {
+    font-size:0.8rem;
+  }
+}
+
+@media (max-width:600px) {
+  #mobileNav {
+    display:none;
+  }
+
+  #productsButton a {
+    font-size:0.6rem;
+  }
+
+    header label {
+      display:block;
+      position:fixed;
+    }
+
+    .logoText {
+      font-size:2.5rem;
+      margin:0px auto;
+    }
+
+    .showcase {
+      background-position:center;
+      background-size:cover;
+    }
+    .navBar a {
+      display:none;
+    }
+
+    .showcase h1 {
+      font-size: 1.5rem;
+    }
+}
+
+@media (max-width:350px) {
+  .logoText {
+    font-size:2rem;
+  }
+
+  .showcase h1 {
+    font-size:1.3rem;
+  }
+
+  #productsButton {
+    width:50vw;
+  }
+}
